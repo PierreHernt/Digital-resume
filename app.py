@@ -142,7 +142,7 @@ def set_sidbar():
     with st.sidebar:
         # Ajout de la photo en haut de la barre latérale
         profile_pic = Image.open("images/Me.jpg")  # Remplacez "images/Me.jpg" par le chemin réel de votre photo
-        st.image(profile_pic, caption="Pierre Hernot", use_column_width=True)
+        st.image(profile_pic, caption="Pierre Hernot", use_container_width=True)
         st.title("SUMMARY")
         st.subheader("""
             Graduated with a Master's in "Digital Sciences and Sport," specializing in data science at EUR Digisport in Rennes, I aim to enhance my skills. Initially sports-focused, I'm eager to develop versatile expertise to tackle challenges in health and other fields.
@@ -256,7 +256,7 @@ def certaficate():
     def display_certificate(image_path, name, issuer, date ):
         col1 , col2 = st.columns(2)
         with col1:
-            st.image(image_path, caption=name, use_column_width=True)
+            st.image(image_path, caption=name, use_container_width=True)
         with col2:
             st.subheader(name)
             st.write(f"**Issuer:** {issuer}")
