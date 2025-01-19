@@ -93,6 +93,7 @@ def experience():
             "Internship Duration : Jan 2024 - Jun 2024",
             "Stade Rennais Training Center, Rennes, · On-site",
             """
+            📄 [View Recommendation Letter](https://drive.google.com/file/d/1ogJ5hP-V_mqHkpwu0z1E5LuXkkusTRKd/view?usp=drive_link)
             * Updating Power BI dashboards with data from : 
                 - GPS tracking devices
                 - Video analysis software
@@ -112,6 +113,7 @@ def experience():
         "Internship Duration: Feb 2023 - Jun 2023 and Jan 2024 - Jul 2024 (1 year)",
         "M2S (Mouvement Sport Santé) Laboratory,  Bruz · On-site",
         """
+        📄 [View Recommendation Letter](https://drive.google.com/file/d/1M7JOEiVB7_ZmWppsesbsVA6GqaDXeGg8/view?usp=drive_link)
         * In my research, I examined the relationship between maximal fat 
           oxidation and match performance using GPS data. My article, 
           "Maximal Fat Oxidation Impacts High-Intensity Running During Soccer Matches: Lessons from a Retrospective Study in Elite Soccer Players," 
@@ -142,7 +144,7 @@ def set_sidbar():
     with st.sidebar:
         # Ajout de la photo en haut de la barre latérale
         profile_pic = Image.open("images/Me.jpg")  # Remplacez "images/Me.jpg" par le chemin réel de votre photo
-        st.image(profile_pic, caption="Pierre Hernot", use_container_width=True)
+        st.image(profile_pic, caption="Pierre Hernot")#, use_container_width=True)
         st.title("SUMMARY")
         st.subheader("""
             Graduated with a Master's in "Digital Sciences and Sport," specializing in data science at EUR Digisport in Rennes, I aim to enhance my skills. Initially sports-focused, I'm eager to develop versatile expertise to tackle challenges in health and other fields.
@@ -181,7 +183,10 @@ def skills():
     [![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&logoSize=2)](#)
     [![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
     [![Seaborn](https://img.shields.io/badge/-Seaborn-4E5180?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
+    [![json](https://img.shields.io/badge/-json-000000?style=for-the-badge&logo=json&logoColor=white&logoSize=2)](#)
     [![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white&logoSize=2)](#)
+    [![Github](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&logoSize=2)](#)
+    [![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=white&logoSize=2)](#)
     [![R](https://img.shields.io/badge/-Rstudio-276DC3?style=for-the-badge&logo=R&logoColor=white&logoSize=2)](#)
     [![Shiny](https://img.shields.io/badge/-Shiny-276DC3?style=for-the-badge&logo=R&logoColor=white&logoSize=2)](#)
     [![Matlab](https://img.shields.io/badge/-Matlab-0076A8?style=for-the-badge&logo=mathworks&logoColor=white&logoSize=2)](#)
@@ -197,26 +202,29 @@ def projects():
     # --- Projects & Accomplishments ---
 
     Data_Viz = {
-        "🏆 R Shiny App": "https://github.com/PierreHernt/Application-Shiny-Visualisation-des-Jeux-Olympiques",
+        "🏅 R Shiny App": "https://github.com/PierreHernt/Application-Shiny-Visualisation-des-Jeux-Olympiques",
+        "⚛ React App": "https://github.com/PierreHernt/my-map-app",
+
     }
     Data_Viz_descreption = {
-        "🏆 R Shiny App": "Create an R Shiny application focused on sports science to visualize specific data.",
+        "🏅 R Shiny App": "Create an R Shiny application focused on sports science to visualize specific data.",
+        "⚛ React App": "Develop a React application to visualize and assess the accessibility of healthcare services in French communes.",
     } 
 
     ML = {
-        "🏆 Classification of Tennis Stroke Types": "https://github.com/PierreHernt/MachineLearning-Classification-de-types-de-coups-au-Tennis",
+        "🎾 Classification of Tennis Stroke Types": "https://github.com/PierreHernt/MachineLearning-Classification-de-types-de-coups-au-Tennis",
         
     }
     ML_descreption = {
-        "🏆 Classification of Tennis Stroke Types" : "Classification of Tennis Stroke Types (Time-Series Data from Accelerometer and Gyroscope) with Machine Learning (Rstudio). ",
+        "🎾 Classification of Tennis Stroke Types" : "Classification of Tennis Stroke Types (Time-Series Data from Accelerometer and Gyroscope) with Machine Learning (Rstudio). ",
     }
 
     DL = {
-        "🏆 Classification of Tennis Stroke Types": "https://github.com/PierreHernt/DeeplLearning-Classification-de-types-de-coups-au-Tennis",
+        "🔗 Classification of Tennis Stroke Types": "https://github.com/PierreHernt/DeeplLearning-Classification-de-types-de-coups-au-Tennis",
     }
 
     DL_descreption = {
-        "🏆 Classification of Tennis Stroke Types" : "Classification of Tennis Stroke Types (Time-Series Data from Accelerometer and Gyroscope) with Deep Learning (Python).",
+        "🔗 Classification of Tennis Stroke Types" : "Classification of Tennis Stroke Types (Time-Series Data from Accelerometer and Gyroscope) with Deep Learning (Python).",
     }
     
      
@@ -256,7 +264,7 @@ def certaficate():
     def display_certificate(image_path, name, issuer, date ):
         col1 , col2 = st.columns(2)
         with col1:
-            st.image(image_path, caption=name, use_container_width=True)
+            st.image(image_path, caption=name)#, use_container_width=True)
         with col2:
             st.subheader(name)
             st.write(f"**Issuer:** {issuer}")
