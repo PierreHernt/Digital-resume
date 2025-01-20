@@ -143,11 +143,11 @@ def experience():
 def set_sidbar():
     with st.sidebar:
         # Ajout de la photo en haut de la barre latérale
-        profile_pic = Image.open("images/Me.jpg")  # Remplacez "images/Me.jpg" par le chemin réel de votre photo
+        profile_pic = Image.open("images/Me.jpg") 
         st.image(profile_pic, caption="Pierre Hernot")#, use_container_width=True)
         st.title("SUMMARY")
         st.subheader("""
-            Graduated with a Master's in "Digital Sciences and Sport," specializing in data science at EUR Digisport in Rennes, I aim to enhance my skills. Initially sports-focused, I'm eager to develop versatile expertise to tackle challenges in health and other fields.
+            Graduated with a Master's in "Digital Sciences and Sport," specializing in data science at EUR Digisport in Rennes, I aim to enhance my skills. Initially sports-focused, I'm eager to develop versatile expertise in data science to tackle challenges in health and other fields.
         """)
 
         st.write("\n \n ")
@@ -271,10 +271,9 @@ def certaficate():
             st.write(f"**Date Earned:** {date}")
   
 
-    # Replace these with your actual certificate data
+    # Certificate data
     certificates_data = [
         {"image_path": "images/Toeic.jpg", "name": "Toeic Listening and Reading comprehension", "issuer": "ETS", "date": "Nov 2024"},        
-        # Add more certificates as needed
     ]
 
     st.title("My Certificate")
@@ -334,10 +333,10 @@ def main():
             data=PDFbyte,
             file_name=resume_file.name,
             mime="application/octet-stream",
-        )  # Bouton de téléchargement du CV
+        )  
 
     
-    # Ajouter les éléments côte à côte (email, LinkedIn, GitHub) sur la même ligne
+    # Add items side by side (email, LinkedIn, GitHub) on the same line
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; gap: 10px;">
