@@ -35,7 +35,31 @@ def education():
     st.title("Education")
     
 
-    # Digisport
+    # ENSAI
+
+    with st.expander("Master for Smart Data Science, ENSAI, Rennes"):
+        display_study(
+            "images/Ensai.png",
+            "🎓 Master for Smart Data Science",
+            "ENSAI",
+            "Sep 2025 - Sep 2026",
+            """
+            This international Master's program, fully taught in English, combines advanced statistics, 
+            applied mathematics, and computer science to analyze massive and heterogeneous data and to 
+            develop strong expertise in artificial intelligence.
+            Key Areas of Study:
+            - Statistical modeling
+            - Algorithms
+            - Data management
+            - Machine learning
+            - Modern AI methods.     
+
+            🌍 **The Master for Smart Data Science ranked 5th in Eduniversal's 2025 “Best French Master's in Big Data & Data Science” Ranking.**
+               """,
+            
+        )
+    
+        # Digisport
     with st.expander("MSc STAPS in Digital and Sport Science (EUR Digisport), Rennes"):
         display_study(
             "images/Digisport.jpg",
@@ -143,11 +167,11 @@ def experience():
 def set_sidbar():
     with st.sidebar:
         # Ajout de la photo en haut de la barre latérale
-        profile_pic = Image.open("images/Me.jpg") 
+        profile_pic = Image.open("images/Me.jpg")  # Remplacez "images/Me.jpg" par le chemin réel de votre photo
         st.image(profile_pic, caption="Pierre Hernot")#, use_container_width=True)
         st.title("SUMMARY")
         st.subheader("""
-            Graduated with a Master's in "Digital Sciences and Sport," specializing in data science at EUR Digisport in Rennes, I aim to enhance my skills. Initially sports-focused, I'm eager to develop versatile expertise in data science to tackle challenges in health and other fields.
+Currently enrolled in the Master for Smart Data Science at ENSAI (Rennes), I am seeking a 4- to 6-month internship starting in April 2026. My background includes a Master’s degree in Digital Sciences and Sport (EUR Digisport, Rennes), where I specialized in data science. Initially focused on sports applications, I am now eager to apply my skills more broadly, particularly in areas such as healthcare, the environment, and the public sector, where data-driven approaches can generate meaningful contributions to society.
         """)
 
         st.write("\n \n ")
@@ -176,6 +200,7 @@ def skills():
     # Embedding badges in Markdown
     badges = """
     [![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
+    [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
     [![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&logoSize=2)](#)
     [![scikit-learn](https://img.shields.io/badge/-scikit%20learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&logoSize=2)](#)
     [![Keras](https://img.shields.io/badge/-Keras-D00000?style=for-the-badge&logo=keras&logoColor=white&logoSize=2)](#)
@@ -271,9 +296,10 @@ def certaficate():
             st.write(f"**Date Earned:** {date}")
   
 
-    # Certificate data
+    # Replace these with your actual certificate data
     certificates_data = [
         {"image_path": "images/Toeic.jpg", "name": "Toeic Listening and Reading comprehension", "issuer": "ETS", "date": "Nov 2024"},        
+        # Add more certificates as needed
     ]
 
     st.title("My Certificate")
@@ -333,10 +359,10 @@ def main():
             data=PDFbyte,
             file_name=resume_file.name,
             mime="application/octet-stream",
-        )  
+        )  # Bouton de téléchargement du CV
 
     
-    # Add items side by side (email, LinkedIn, GitHub) on the same line
+    # Ajouter les éléments côte à côte (email, LinkedIn, GitHub) sur la même ligne
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; gap: 10px;">
