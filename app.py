@@ -171,7 +171,7 @@ def set_sidbar():
         st.image(profile_pic, caption="Pierre Hernot")#, use_container_width=True)
         st.title("SUMMARY")
         st.subheader("""
-Currently enrolled in the Master for Smart Data Science at ENSAI (Rennes), I am seeking a 4- to 6-month internship starting in April 2026. My background includes a Master’s degree in Digital Sciences and Sport (EUR Digisport, Rennes), where I specialized in data science. Initially focused on sports applications, I am now eager to apply my skills more broadly, particularly in areas such as healthcare, the environment, and the public sector, where data-driven approaches can generate meaningful contributions to society.
+Currently enrolled in the Master for Smart Data Science at ENSAI (Rennes), I am seeking a 4- to 6-month internship starting in March 2026. My background includes a Master’s degree in Digital Sciences and Sport (EUR Digisport), where I specialized in data science. Initially focused on sports applications, I am now eager to apply my skills more broadly, particularly in areas such as healthcare, the environment, where data-driven approaches can generate meaningful contributions to society.
         """)
 
         st.write("\n \n ")
@@ -316,7 +316,7 @@ def main():
     # --- PATH SETTINGS ---
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
     css_file = current_dir / "styles" / "main.css"
-    resume_file = current_dir / "pdf" / "Resume Pierre Hernot.pdf"
+    resume_file = current_dir / "pdf" / "Pierre_Hernot__Data_Scientist.pdf"
     profile_pic = current_dir / "images" / "Me.jpg"
 
     # --- GENERAL SETTINGS ---
@@ -404,3 +404,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
